@@ -1,45 +1,45 @@
-*[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [العَرَبِيَّة‎](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [বাংলা](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Português do Brasil](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [Deutsch](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [ελληνικά](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [עברית](https://github.com/donnemartin/system-design-primer/issues/272) ∙ [Italiano](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [韓國語](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [فارسی](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polski](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [русский язык](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Español](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [ภาษาไทย](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Türkçe](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [tiếng Việt](https://github.com/donnemartin/system-design-primer/issues/127) ∙ [Français](https://github.com/donnemartin/system-design-primer/issues/250) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
+*[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [العَرَبِيَّة‎](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [বাংলা](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Português do Brasil](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [Deutsch](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [ελληνικά](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [עברית](https://github.com/donnemartin/system-design-primer/issues/272) ∙ [Italiano](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [韓國語](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [فارسی](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polski](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [русский язык](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Español](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [ภาษาไทย](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Türkçe](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [tiếng Việt](https://github.com/donnemartin/system-design-primer/issues/127) ∙ [Français](https://github.com/donnemartin/system-design-primer/issues/250) ∙ [한국어](https://github.com/donnemartin/system-design-primer/issues/102)  | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-# The System Design Primer
+# 시스템 설계 입문
 
 <p align="center">
   <img src="http://i.imgur.com/jj3A5N8.png"/>
   <br/>
 </p>
 
-## Motivation
+## 이 글을 왜 봅니까?
 
-> Learn how to design large-scale systems.
+> 대규모 시스템을 어떻게 설계하는 지 배웁니다.
 >
-> Prep for the system design interview.
+> 시스템 설계 면접에 준비합니다.
 
-### Learn how to design large-scale systems
+### 대규모 시스템 설계 배우기
 
-Learning how to design scalable systems will help you become a better engineer.
+더 나은 엔지니어가 되기 위해서 확장 가능한 시스템을 설계하는 일은 매우 큰 도움이 됩니다.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+시스템 디자인은 굉장히 포괄적인 주제입니다. 시스템 설계 이론과 관련해서는 **웹 상에 엄청난 양의 자료가 흩어져** 있습니다.
 
-This repo is an **organized collection** of resources to help you learn how to build systems at scale.
+이 저장소에는 확장성 있는 시스템 설계를 어떻게 하는지 배우는데 큰 도움이 되는 자료들을 **모아서 정리해놓았습니다.** 
 
-### Learn from the open source community
+### 오픈 소스 커뮤니티로부터 배우기
 
-This is a continually updated, open source project.
+이 프로젝트는 오픈 소스이며 지속적으로 업데이트되고 있습니다.
 
-[Contributions](#contributing) are welcome!
+이 문서에 [참여](#contributing) 해주십시오!
 
-### Prep for the system design interview
+### 시스템 설계 면접 준비
 
-In addition to coding interviews, system design is a **required component** of the **technical interview process** at many tech companies.
+코딩 면접 뿐만 아니라 시스템 설계도 많은 기술 기반 회사들의 **기술 면접 프로세스**의 **꼭 필요한 요소** 로 자리잡았습니다.
 
-**Practice common system design interview questions** and **compare** your results with **sample solutions**: discussions, code, and diagrams.
+**일반적인 시스템 설계 면접 질문**을 풀어 내 정답과 **예제 답변**을 **비교**하는 **연습**을 합니다: 토론, 코드, 다이어그램 등을 통해.
 
-Additional topics for interview prep:
+면접 준비와 관련된 추가 토픽들:
 
-* [Study guide](#study-guide)
-* [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question)
-* [System design interview questions, **with solutions**](#system-design-interview-questions-with-solutions)
-* [Object-oriented design interview questions, **with solutions**](#object-oriented-design-interview-questions-with-solutions)
-* [Additional system design interview questions](#additional-system-design-interview-questions)
+* [어떻게 공부해야 할까?](#study-guide)
+* [시스템 설계 면접 질문에 접근하는 방법](#how-to-approach-a-system-design-interview-question)
+* [**답변을 포함한** 시스템 설계 면접 질문 목록](#system-design-interview-questions-with-solutions)
+* [**답변을 포함한** 객체지향 설계 면접 질문 목록](#object-oriented-design-interview-questions-with-solutions)
+* [추가적인 시스템 설계 면접 질문들](#additional-system-design-interview-questions)
 
 ## Anki flashcards
 

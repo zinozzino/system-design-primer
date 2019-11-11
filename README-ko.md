@@ -48,43 +48,44 @@
   <br/>
 </p>
 
-The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repetition to help you retain key system design concepts.
+같이 제공되는 [Anki flashcard decks](https://apps.ankiweb.net/) 로 반복 학습하여 시스템 설계 개념을 잡아갑니다.
 
 * [System design deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
 * [System design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
 * [Object oriented design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
 
-Great for use while on-the-go.
+어디 돌아다닐때 하면 좋습니다.
 
 ### Coding Resource: Interactive Coding Challenges
+### 코딩 자료: 인터랙티브 코딩 챌린지
 
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
+[**코딩 인터뷰**](https://github.com/donnemartin/interactive-coding-challenges)를 준비하기 위해 필요한 자료를 찾으시나요?
 
 <p align="center">
   <img src="http://i.imgur.com/b4YtAEN.png"/>
   <br/>
 </p>
 
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
+추가적인 Anki deck 을 포함한 형제 레포인 [**인터랙티브 코딩 챌린지**](https://github.com/donnemartin/interactive-coding-challenges)를 참조 부탁드립니다:
 
 * [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## Contributing
+## 기여
 
-> Learn from the community.
+> 커뮤니티로부터 배웁니다.
 
-Feel free to submit pull requests to help:
+언제든지 도움이 되는 Pull Request 를 환영합니다:
 
-* Fix errors
-* Improve sections
-* Add new sections
-* [Translate](https://github.com/donnemartin/system-design-primer/issues/28)
+* 에러 수정
+* 섹션 내용 보강
+* 새로운 섹션 추가
+* [번역](https://github.com/donnemartin/system-design-primer/issues/28)
 
-Content that needs some polishing is placed [under development](#under-development).
+보충이 더 필요한 자료는 [공사중](#under-development) 부분에 준비되어 있습니다.
 
-Review the [Contributing Guidelines](CONTRIBUTING.md).
+[기여 가이드라인](CONTRIBUTING.md) 을 확인 부탁드립니다.
 
-## Index of system design topics
+## 시스템 설계 주제 Index
 
 > Summaries of various system design topics, including pros and cons.  **Everything is a trade-off**.
 >
@@ -177,7 +178,7 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 * [Contact info](#contact-info)
 * [License](#license)
 
-## Study guide
+## 공부하는 방법
 
 > Suggested topics to review based on your interview timeline (short, medium, long).
 
@@ -213,7 +214,7 @@ Start broad and go deeper in a few areas.  It helps to know a little about vario
 | Work through [Object-oriented design interview questions with solutions](#object-oriented-design-interview-questions-with-solutions) | Some | Many | Most |
 | Review [Additional system design interview questions](#additional-system-design-interview-questions) | Some | Many | Most |
 
-## How to approach a system design interview question
+## 시스템 설계 면접 질문에 접근하는 방법
 
 > How to tackle a system design interview question.
 
@@ -221,49 +222,52 @@ The system design interview is an **open-ended conversation**.  You are expected
 
 You can use the following steps to guide the discussion.  To help solidify this process, work through the [System design interview questions with solutions](#system-design-interview-questions-with-solutions) section using the following steps.
 
-### Step 1: Outline use cases, constraints, and assumptions
+### 1단계: 사용 사례, 제약 조건 및 가정의 개요 잡기
 
-Gather requirements and scope the problem.  Ask questions to clarify use cases and constraints.  Discuss assumptions.
+필요한 항목들을 정리하고 문제의 범위를 지정하세요.  사용 사례와 제약 조건을 확인하기 위해 물어보세요. 가정에 대해서 토의해보세요.
 
-* Who is going to use it?
-* How are they going to use it?
-* How many users are there?
-* What does the system do?
-* What are the inputs and outputs of the system?
-* How much data do we expect to handle?
-* How many requests per second do we expect?
-* What is the expected read to write ratio?
+* 누가 이 시스템을 사용할까?
+* 시스템을 어떻게 사용할까?
+* 얼마나 많은 사용자가 접속할까?
+* 이 시스템의 역할은 무엇일까?
+* 시스템의 입력과 출력은 무엇일까?
+* 시스템이 얼마나 많은 데이터를 다루어야 할까?
+* 초당 얼마나 많은 요청이 들어올까?
+* 읽기와 쓰기 작업의 비중이 얼마나 될까?
 
-### Step 2: Create a high level design
+### 2단계: 높은 단계의 설계 만들기
 
-Outline a high level design with all important components.
+모든 중요한 요소가 포함된 높은 단계의 설계 개요를 잡습니다.
 
-* Sketch the main components and connections
-* Justify your ideas
+* 주요 요소와 연결을 그립니다.
+* 아이디어를 확실히 정합니다.
 
-### Step 3: Design core components
+### 3단계: 핵심 요소 설계
 
 Dive into details for each core component.  For example, if you were asked to [design a url shortening service](solutions/system_design/pastebin/README.md), discuss:
+각각의 핵심 요소의 세부 사항에 접근합니다. 만약 [URL 단축 서비스](solutions/system_design/pastebin/README.md)를 만든다고 할 때 논의해야 할 사항이:
 
 * Generating and storing a hash of the full url
-    * [MD5](solutions/system_design/pastebin/README.md) and [Base62](solutions/system_design/pastebin/README.md)
-    * Hash collisions
-    * SQL or NoSQL
-    * Database schema
-* Translating a hashed url to the full url
-    * Database lookup
-* API and object-oriented design
+* 전체 URL의 Hash 를 생성하고 저장
+    * [MD5](solutions/system_design/pastebin/README.md) 또는 [Base62](solutions/system_design/pastebin/README.md)
+    * Hash 충돌
+    * SQL 또는 NoSQL
+    * 데이터베이스 스키마
+* URL Hash 를 전체 URL 로 변환
+    * 데이터베이스 조회
+* API 와 객체 지향 설계
 
-### Step 4: Scale the design
+### 4단계: 설계 확장하기
 
-Identify and address bottlenecks, given the constraints.  For example, do you need the following to address scalability issues?
+주어진 제약 조건에 따라 병목 현상이 어디서 발생하는지 확인하고 해결합니다. 예를 들어 확장성 이슈를 해결하기 위해 다음 사항이 필요한가요?
 
-* Load balancer
-* Horizontal scaling
-* Caching
-* Database sharding
+* 로드 밸런서
+* 수평 확장 
+* 캐싱
+* 데이터베이스 샤딩
 
 Discuss potential solutions and trade-offs.  Everything is a trade-off.  Address bottlenecks using [principles of scalable system design](#index-of-system-design-topics).
+잠재적 해결 방법과 부작용에 대해 논의해봅니다. 모든 해결책에는 부작용이 따릅니다. [확장성 있는 시스템을 설계 이론](#index-of-system-design-topics) 으로 병목현상을 다뤄보세요.
 
 ### Back-of-the-envelope calculations
 
